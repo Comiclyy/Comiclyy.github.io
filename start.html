@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>somerandompage</title>
+    <link rel="stylesheet" href="start.css">
+</head>
+<body>
+    <script>
+        const date = new Date();
+        const the_date = date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate();
+        const the_time = date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds();
+    </script>
+
+    <h1><script>document.write(the_time);</script></h1>
+    <h3><script>document.write(the_date);</script></h3>
+
+    <form action="https://google.com/search">
+        <input autocomplete="off" name="q" placeholder="Search on Google.." />
+    </form>
+
+    <br>
+
+    <div class="social">
+        <h3 style="color: #cf5d5d;">social</h3>
+        <a href="https://reddit.com"><dt>Reddit</dt></a>
+        <a href="https://twitter.com"><dt>Twitter</dt></a>
+        <a href="https://www.tiktok.com/"><dt>Tiktok</dt></a>
+        <a href="https://discord.com"><dt>Discord</dt></a>
+        <br>
+    </div>
+    <div class="dev">
+        <h3 style="color: #5d88cf;">dev</h3>
+        <a href="https://github.com"><dt>Github</dt></a>
+        <a href="https://stackoverflow.com"><dt>Stackoverflow</dt></a>
+        <a href="https://Comicly.is-a.dev"><dt>My-Website</dt></a>
+        <a href="https://github.com/Comicly69/dotfiles"><dt>Dotfiles</dt></a>
+        <br>
+    </div>
+
+    <div class="other">
+        <h3 style="color: #cfcf5d;">other</h3>
+        <a href="https://youtube.com"><dt>Youtube</dt></a>
+        <a href="https://spotify.com"><dt>Spotify</dt></a>
+        <a href="https://gmail.com"><dt>Gmail</dt></a>
+        <a href="https://google.com"><dt>Google</dt></a>
+        <br>
+    </div>
+
+    <div class="subreddits">
+        <h3 style="color: #6acf5d;">subreddits</h3>
+        <a href="https://reddit.com/r/unixporn"><dt>r/unixp*rn</dt></a>
+        <a href="https://reddit.com/r/linux"><dt>r/linux</dt></a>
+        <a href="https://reddit.com/r/archlinux"><dt>r/archlinux</dt></a>
+        <a href="https://reddit.com/r/progrmming"><dt>r/programming</dt></a>
+        <br>
+    </div>
+</body>
+</html>

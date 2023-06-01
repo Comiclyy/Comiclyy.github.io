@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+:root {
+    --text-color: whitesmoke;
+    --body-background-color: #2f3133;
+    --search-bar-color: #262729;
+    --boxes-color: #262729;
+    --font: "Roboto Mono", monospace;
+    --radius: 10px;
+    --link-color: grey;
+    --body-margin: 17%;
+}
+
+body {
+    background-color: var(--body-background-color);
+    color: var(--text-color);
+    font-family: var(--font);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: var(--body-margin);
+}
+
+input {
+    background-color: var(--search-bar-color);
+    font-family: var(--font);
+    border: none;
+    border-radius: var(--radius);
+    color: var(--text-color);
+    width: 560px;
+    height: 42px;
+    font-size: large;
+    text-indent: 7px;
+}
+
+.social, .dev, .other, .subreddits {
+    background-color: var(--boxes-color);
+    border-radius: var(--radius);
+    width: 200px;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
