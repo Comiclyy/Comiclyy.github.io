@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            margin: 0;
+        }
+    </style>
+    <script>
+        function changeColor() {
+            var color = document.getElementById("colorInput").value;
+            document.body.style.backgroundColor = color;
+            document.body.innerHTML = "";
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <input type="text" id="colorInput" placeholder="Enter color hex code">
+        <button onclick="changeColor()">Submit</button>
+    </div>
+</body>
+</html>
