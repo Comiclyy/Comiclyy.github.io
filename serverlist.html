@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server List Template</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+        th {
+            background-color: #1c1c1c;
+            font-weight: bold;
+        }
+        td {
+            background-color: #2a2a2a;
+        }
+        .row-highlight {
+            background-color: #383838;
+        }
+        .button {
+            background-color: #1c88e5;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #155a9c;
+        }
+    </style>
+    <script>
+        function joinServer() {
+            // Randomize the httpPort between 13010 and 13099
+            var randomPort = Math.floor(Math.random() * 90) + 13010;
+            var url = `acmanager://race/online/join?query=race/online/join&ip=45.88.229.84&httpPort=${randomPort}&password=`;
+            // Redirect to the generated URL
+            window.location.href = url;
+        }
+    </script>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Traffic Density</th>
+            <th>Server Owner</th>
+            <th>VIP slots</th>
+            <th>Online</th>
+            <th>Map</th>
+            <th>Region</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>Heavy Traffic | Public 1</td>
+            <td>Heavy Traffic</td>
+            <td>👥 Nohesi</td>
+            <td>🌟 Yes</td>
+            <td>14</td>
+            <td>🗺️ SRP</td>
+            <td>🇺🇸</td>
+            <td><button class="button" onclick="joinServer()">Join</button></td>
+        </tr>
+        <tr class="row-highlight">
+            <td>Heavy Traffic | Public 2</td>
+            <td>Heavy Traffic</td>
+            <td>👥 Nohesi</td>
+            <td>🌟 Yes</td>
+            <td>14</td>
+            <td>🗺️ SRP</td>
+            <td>🇺🇸</td>
+            <td><a href="https://2.com" target="_blank"><button class="button">Join</button></a></td>
+        </tr>
+        <tr>
+            <td>Heavy Traffic | Public 3</td>
+            <td>Heavy Traffic</td>
+            <td>👥 Nohesi</td>
+            <td>🌟 Yes</td>
+            <td>14</td>
+            <td>🗺️ SRP</td>
+            <td>🇺🇸</td>
+            <td><a href="https://3.com" target="_blank"><button class="button">Join</button></a></td>
+        </tr>
+    </table>
+</body>
+</html>
